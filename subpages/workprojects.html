@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- DEVELOPER: Ann Carlos, IS117-005, Fall 2025 -->
 <html lang="en">
 
 <head>
@@ -20,47 +21,58 @@
 		<label for="menu-toggle" class="menu-btn"></label>
 		<ul class="menu">
 			<li><a href="../index.html">Home</a></li>
-			<li id="about"><a href="about.html">About</a></li>
 			<li>
 				<a href="#"> Projects <small></small></a>
 				<ul class="submenu">
-					<li id="work projects"><a href="workprojects.html" class="current">Work Projects</a></li>
-					<li id="school projects"><a href="schoolprojects.html">School Projects</a></li>
+					<li id = "work projects"><a href="workprojects.html" class="current">Work Projects</a></li>
+					<li id = "school projects"><a href="schoolprojects.html">School Projects</a></li>
 				</ul>
 			</li>
-			<li id="resume"><a href="resume.html">Resume</a></li>
+			<li id = "resume"><a href="resume.html">Resume</a></li>
+			<li id = "about"><a href="about.html">About</a></li>
 		</ul>
+		<div class="topnav">
+	  		<input type="text" placeholder="Search..">
+		</div>
 	</nav>
 	<main>
-		<section>
-			<h2>Work Projects</h2>
-			<p>San Joaquin Valley Town Hall is a non-profit organization that is run by an 
-				all-volunteer board of directors. Our mission is to bring nationally and 
-				internationally renowned, thought-provoking speakers who inform, educate, 
-				and entertain our audience! As one or our members told us:</p>
-			<blockquote>&ldquo;Each year I give a ticket package to each of our family members. 
-				I think of it as the gift of knowledge...and that is priceless.&rdquo;</blockquote>
+		<!-- Project Title -->
+            <h1 class="display-5 mb-4 text-center">Project Title Name</h1>
+            <p class="lead text-center text-muted mb-5">Brief summary or role (e.g., UX Designer, Lead Researcher)</p>
 
-			<h1>Featured Speaker</h1>
-			<article class="featured">
-				<h2>Fossil Threads in the Web of Life</h2>
-				<img src="../images/sampson_dinosaur.jpg" alt="Scott Sampson with dinosaur">
-				<h3>February<br>
-				Scott Sampson</h3>
-				<p>What's 75 million years old and brand spanking new? A teenage Utahceratops! 
-				Come to the Saroyan, armed with your best dinosaur roar, when Scott Sampson, Research 
-				Curator at the Utah Museum of Natural History, steps to the podium. Sampson's research 
-				has focused on the ecology and evolution of late Cretaceous dinosaurs and he has conducted 
-				fieldwork in a number of countries in Africa.</p>
-				<p><a href="../speakers/sampson.html">Read more...</a>&nbsp;<b>Or meet us there!</b></p>
-			</article>
+            <!-- Two-Column Layout for Project Details -->
+            <div class="row g-4 align-items-start">
+                
+                <!-- Left Column: Project Image (col-md-4) -->
+                <div class="col-md-4">
+                    <div class="p-4 border text-center bg-light h-100 d-flex flex-column justify-content-center align-items-center rounded">
+                        <img src="https://placehold.co/300x200/e9ecef/212529?text=Project+Image" class="img-fluid mb-3 rounded" alt="Project Image Placeholder">
+                        <p class="fw-bold mb-0">Project Image / Key Visual</p>
+                        <small class="text-muted">A key visual or hero image for the project.</small>
+                    </div>
+                </div>
 
-			<h2>Our Ticket Packages</h2>
-			<ul>
-				<li>Season Package: $95</li>
-				<li>Patron Package: $200</li>
-				<li>Single Speaker: $25</li>
-			</ul>
+                <!-- Right Column: Project Description (col-md-8) -->
+                <div class="col-md-8">
+                    <div class="p-4 border bg-light h-100 rounded">
+                        <h2 class="h5 mb-3">Text about image describing project</h2>
+                        <p>This section is dedicated to the project narrative. It outlines the problem statement, my role in the solution, and the methodology used (e.g., User-Centered Design, Agile). The content here should be highly detailed and visually descriptive.</p>
+                        
+                        <!-- List of key points -->
+                        <ul class="list-unstyled">
+                            <li><strong>Problem:</strong> [Detailed explanation of the initial challenge.]</li>
+                            <li><strong>Solution:</strong> [The final design or product outcome.]</li>
+                            <li><strong>My Role:</strong> [Specific responsibilities in the team.]</li>
+                            <li><strong>Tools Used:</strong> [Figma, Sketch, Adobe XD, etc.]</li>
+                            <li><strong>Impact:</strong> [Measurable results or findings.]</li>
+                        </ul>
+
+                        <p class="mt-4">The text continues here, covering findings, iterations, and results...</p>
+                        <p>...</p>
+                        <p>...</p>
+                    </div>
+                </div>
+            </div>
 		</section>	
 	</main>
 	<footer>

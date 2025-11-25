@@ -1,20 +1,19 @@
-/* custom property */
+
 :root {
-	--accent-color: #800000;  /* could also be coded #800 */
+	--accent-color: #800000; 
 	--gradient-color: #f6bb73;
 	--light-menu-color: white;
 	--mid-menu-color: antiquewhite;
 	--dark-menu-color: #800000;
 }
+/*DEVELOPER: Ann Carlos, IS117-005, Fall 2025 */
 
-/* reset */
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
 
-/* default styles */
 body {
 	font-family: Arial, Helvetica, sans-serif;
     font-size: calc(15px + .2vw);
@@ -44,7 +43,6 @@ ul {
 	margin-left: 2em;
 }
 
-/* the styles for the header */
 header {
 	line-height: 1.2;
 	border-bottom: 2px solid var(--accent-color);
@@ -174,6 +172,19 @@ header {
 
 .menu-btn::before {
 	content: "☰";
+}
+
+/* layout for card rows on index page */
+.cards-row {
+	display: flex;
+	flex-wrap: wrap;      /* allow cards to wrap to next row on small screens */
+	gap: 1rem;            /* space between cards */
+	justify-content: center;
+	padding: 1rem 0;
+}
+.cards-row .card {
+	flex: 0 1 18rem;      /* don't grow, can shrink, basis 18rem */
+	max-width: 18rem;
 }
 
 /* the styles for the main content */
