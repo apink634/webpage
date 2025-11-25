@@ -10,58 +10,85 @@
 </head>
 
 <body>
-	<header>
-		
-		<h2>Ann Carlos</h2>
-		<h3>UI/UX Design|Human-Computer Interaction</h3>
-	</header>
-	<nav class="navbar">
+<header>
+        <h2>Ann Carlos</h2>
+        <h3>UI/UX Design|Human-Computer Interaction</h3>
+    </header>
+<nav class="navbar">
 		<input type="checkbox" id="menu-toggle">
 		<label for="menu-toggle" class="menu-btn"></label>
-		<ul class="menu">
-			<li><a href="../index.html">Home</a></li>
-			<li id="about"><a href="about.html" class="current">About</a></li>
+        <ul class="menu">
+            <li><a href="../index.html">Home</a></li>
 			<li>
 				<a href="#"> Projects <small></small></a>
-				<ul class="submenu">
-					<li id="work projects"><a href="workprojects.html">Work Projects</a></li>
-					<li id="school projects"><a href="schoolprojects.html">School Projects</a></li>
-				</ul>
+                <ul class="submenu">
+                    <li id = "work projects"><a href="workprojects.html">Work Projects</a></li>
+                    <li id = "school projects"><a href="schoolprojects.html">School Projects</a></li>
+                </ul>
 			</li>
-			<li id="resume"><a href="resume.html">Resume</a></li>
-		</ul>
+            <li id = "resume"><a href="resume.html">Resume</a></li>
+            <li id = "about"><a href="about.html" class="current">About</a></li>
+            <li> <div class="topnav">
+      		<input type="text" placeholder="Search..">
+            </div></li>
+        </ul>
+       
 	</nav>
-	<main>
-		<section>
-			<h2>About Me</h2>
-			<p>San Joaquin Valley Town Hall is a non-profit organization that is run by an 
-				all-volunteer board of directors. Our mission is to bring nationally and 
-				internationally renowned, thought-provoking speakers who inform, educate, 
-				and entertain our audience! As one or our members told us:</p>
-			<blockquote>&ldquo;Each year I give a ticket package to each of our family members. 
-				I think of it as the gift of knowledge...and that is priceless.&rdquo;</blockquote>
+	
+    <main>
 
-			<h1>Featured Speaker</h1>
-			<article class="featured">
-				<h2>Fossil Threads in the Web of Life</h2>
-				<img src="../images/sampson_dinosaur.jpg" alt="Scott Sampson with dinosaur">
-				<h3>February<br>
-				Scott Sampson</h3>
-				<p>What's 75 million years old and brand spanking new? A teenage Utahceratops! 
-				Come to the Saroyan, armed with your best dinosaur roar, when Scott Sampson, Research 
-				Curator at the Utah Museum of Natural History, steps to the podium. Sampson's research 
-				has focused on the ecology and evolution of late Cretaceous dinosaurs and he has conducted 
-				fieldwork in a number of countries in Africa.</p>
-				<p><a href="../speakers/sampson.html">Read more...</a>&nbsp;<b>Or meet us there!</b></p>
-			</article>
 
-			<h2>Our Ticket Packages</h2>
-			<ul>
-				<li>Season Package: $95</li>
-				<li>Patron Package: $200</li>
-				<li>Single Speaker: $25</li>
-			</ul>
-		</section>	
+<div class="cards-row">
+	<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">About Me</h5>
+    <p class="card-text">While I'm not working on projects, you can find me reading a book while enjoying a cup of tea or going for a run. I love plants and animals, and I have a very cute Chinchilla named Mr. Chinchilla!</p>
+  </div>
+	</div>
+	<div class="card" style="width: 18rem;">
+  
+  
+  <div class="card-body">
+  <h5 class="card-title">Contact me!</h5>
+    <p class="card-text">
+                        
+<form action="#" method="POST">
+    
+    <div class="mb-3">
+        <label for="contactName" class="form-label">Name:</label>
+        <input type="text" class="form-control" id="contactName" name="name" required>
+    </div>
+    
+    <div class="mb-3">
+        <label for="contactEmail" class="form-label">Email:</label>
+        <input type="email" class="form-control" id="contactEmail" name="email" required>
+    </div>
+    
+    <div class="mb-3">
+        <label for="contactSubject" class="form-label">Subject/Topic:</label>
+        <input type="text" class="form-control" id="contactSubject" name="subject">
+    </div>
+
+    <div class="mb-3">
+        <label for="contactMessage" class="form-label">Message:</label>
+        <textarea class="form-control" id="contactMessage" name="message" rows="4" required></textarea>
+    </div>
+
+    <div class="d-grid gap-2">
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+</form>
+
+
+    </p>
+    
+  </div>
+	</div>
+</div>
+
+
+
+
 	</main>
 	<footer>
 		<p>&copy; Ann Carlos, 2025</p>
